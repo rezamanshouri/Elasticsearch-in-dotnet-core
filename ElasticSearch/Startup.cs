@@ -18,7 +18,6 @@ namespace ElasticSearch
     using Elasticsearch.Utilities.Lock;
     using Elasticsearch.Utilities.Time;
     using Elasticsearch;
-    using Microsoft.AspNetCore.Http;
 
     public class Startup
     {

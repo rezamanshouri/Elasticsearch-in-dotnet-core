@@ -33,7 +33,6 @@
         private static void AppConfig(WebHostBuilderContext context, IConfigurationBuilder config)
         {
             config.SetBasePath(Directory.GetCurrentDirectory());
-            config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             config.AddJsonFile($"appsettings.{context.HostingEnvironment.EnvironmentName}.json", optional: false, reloadOnChange: true);
             config.AddJsonFile("DevelopmentCredentials.json", optional: true, reloadOnChange: true);
 

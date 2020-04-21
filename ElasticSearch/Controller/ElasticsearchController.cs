@@ -1,4 +1,4 @@
-﻿namespace Elasticsearch.Controllers
+﻿namespace Elasticsearch.Controller
 {
     using System;
 

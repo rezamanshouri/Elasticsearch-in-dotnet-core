@@ -14,8 +14,8 @@ The search functionality is exposed in an endpoint which given a search query, r
 
 The metrics of the application are _posted_ to an endpoint expecting metrics in [InfluxDB Line Protocol][InfluxDB line protocol] in the body.
 
-## How to Run It
-For local testing, create a new file 'DevelopmentCredentials.json' in the root directory of the project, and add the following fields:
+## Managing Credentials
+For local development, create a new file, `DevelopmentCredentials.json`, in the root directory of the project, and add the following fields:
 
 ```
 {
@@ -28,6 +28,8 @@ For local testing, create a new file 'DevelopmentCredentials.json' in the root d
 ```
 
 Never commit this file to source control because this file contains sensitive strings (e.g. passwords, API keys).
+
+For the actual deployment, specify the above credentials as environment variables.
 
 
 
